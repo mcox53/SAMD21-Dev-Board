@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#
+# USBAB
+#
+DEF ~USBAB J 0 40 Y N 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "USBAB" 0 -400 50 H I C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+$FPLIST
+ Connector*:*_??x*mm*
+ Connector*:*1x??x*mm*
+ Pin?Header?Straight?1X*
+ Pin?Header?Angled?1X*
+ Socket?Strip?Straight?1X*
+ Socket?Strip?Angled?1X*
+$ENDFPLIST
+DRAW
+T 0 0 -100 39 0 0 0 D+ Normal 0 C C
+T 0 0 0 39 0 0 0 D- Normal 0 C C
+T 0 0 -300 39 0 0 0 GND Normal 0 C C
+T 0 0 -200 39 0 0 0 ID Normal 0 C C
+T 0 0 200 37 0 0 0 SHIELD Normal 0 C C
+T 0 0 100 39 0 0 0 VBUS Normal 0 C C
+S 150 -295 100 -305 1 1 6 N
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+S 150 205 100 195 1 1 6 N
+S 150 250 -150 -350 1 1 10 f
+X SHIELD 1 300 200 150 L 50 50 1 1 P
+X VBUS 2 300 100 150 L 50 50 1 1 P
+X D- 3 300 0 150 L 50 50 1 1 P
+X D+ 4 300 -100 150 L 50 50 1 1 P
+X ID 5 300 -200 150 L 50 50 1 1 P
+X GND 6 300 -300 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
