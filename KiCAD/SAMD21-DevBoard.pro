@@ -1,4 +1,4 @@
-update=11/18/2018 9:10:29 PM
+update=11/19/2018 3:30:24 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=39
 [eeschema]
 version=1
 LibDir=Custom Libraries
@@ -70,3 +80,4 @@ LibName38=Custom Libraries/samd21g18a-au
 LibName39=Custom Libraries/10118192-0001LF
 LibName40=Custom Libraries/MF-MSMF050-2
 LibName41=Custom Libraries/AP2112K-3.3TRG1
+LibName42=Custom Libraries/cortex_debug
