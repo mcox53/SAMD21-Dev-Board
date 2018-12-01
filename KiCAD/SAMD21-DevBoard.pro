@@ -1,4 +1,4 @@
-update=11/19/2018 3:30:24 PM
+update=12/1/2018 2:12:46 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -81,3 +81,4 @@ LibName39=Custom Libraries/10118192-0001LF
 LibName40=Custom Libraries/MF-MSMF050-2
 LibName41=Custom Libraries/AP2112K-3.3TRG1
 LibName42=Custom Libraries/cortex_debug
+LibName43=Custom Libraries/B3FS-4005P
