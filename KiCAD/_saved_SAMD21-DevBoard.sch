@@ -1013,13 +1013,10 @@ Wire Wire Line
 Wire Wire Line
 	6650 2400 6650 2500
 Wire Wire Line
-	6650 2500 7250 2500
-Wire Wire Line
 	7250 2300 7250 2100
 Wire Wire Line
 	6100 2200 7250 2200
 Connection ~ 7250 2200
-Connection ~ 6800 2500
 $Comp
 L GND #PWR023
 U 1 1 5C0C2A65
@@ -1039,7 +1036,7 @@ U 1 1 5C0C391A
 P 7250 3450
 F 0 "C14" H 7260 3520 50  0000 L CNN
 F 1 ".1uF" H 7260 3370 50  0000 L CNN
-F 2 "" H 7250 3450 50  0001 C CNN
+F 2 "Capacitors_SMD:C_1206" H 7250 3450 50  0001 C CNN
 F 3 "" H 7250 3450 50  0001 C CNN
 	1    7250 3450
 	1    0    0    -1  
@@ -1071,4 +1068,12 @@ Wire Wire Line
 	7000 3600 7250 3600
 Connection ~ 7250 3600
 Connection ~ 7250 3300
+Wire Wire Line
+	6650 2500 7150 2500
+Wire Wire Line
+	7150 2500 7150 2550
+Wire Wire Line
+	7150 2550 7250 2550
+Connection ~ 7250 2550
+Connection ~ 6800 2500
 $EndSCHEMATC
