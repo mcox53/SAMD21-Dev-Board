@@ -1,4 +1,4 @@
-update=12/2/2018 12:06:13 PM
+update=12/8/2018 6:27:16 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=79
 [eeschema]
 version=1
 LibDir=Custom Libraries
@@ -72,13 +82,5 @@ LibName40=Custom Libraries/MF-MSMF050-2
 LibName41=Custom Libraries/AP2112K-3.3TRG1
 LibName42=Custom Libraries/cortex_debug
 LibName43=Custom Libraries/B3FS-4005P
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=79
+LibName44=LM1117-5.0_edited
+LibName45=Custom Libraries/lm1117_edited
