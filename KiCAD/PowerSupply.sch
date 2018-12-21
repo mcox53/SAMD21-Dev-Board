@@ -43,6 +43,7 @@ LIBS:AP2112K-3.3TRG1
 LIBS:cortex_debug
 LIBS:B3FS-4005P
 LIBS:lm1117_edited
+LIBS:fsmcttr
 LIBS:SAMD21-DevBoard-cache
 EELAYER 25 0
 EELAYER END
@@ -430,4 +431,6 @@ Wire Wire Line
 Wire Wire Line
 	6250 4950 6250 4850
 Connection ~ 6250 4850
+Text Notes 3250 2900 0    79   ~ 0
+VERIFY USB PINOUT
 $EndSCHEMATC

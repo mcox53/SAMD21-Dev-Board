@@ -1,4 +1,4 @@
-update=12/8/2018 6:27:16 PM
+update=12/21/2018 2:03:22 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -84,3 +84,4 @@ LibName42=Custom Libraries/cortex_debug
 LibName43=Custom Libraries/B3FS-4005P
 LibName44=LM1117-5.0_edited
 LibName45=Custom Libraries/lm1117_edited
+LibName46=Custom Libraries/fsmcttr
