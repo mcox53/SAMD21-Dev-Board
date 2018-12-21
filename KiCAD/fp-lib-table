@@ -3,4 +3,5 @@
   (lib (name MS1V-T1K)(type KiCad)(uri "$(KIPRJMOD)/MS1V-T1K.pretty")(options "")(descr ""))
   (lib (name B3FS-4)(type KiCad)(uri "$(KIPRJMOD)/B3FS-4.pretty")(options "")(descr ""))
   (lib (name 10118192-0001LF)(type KiCad)(uri "$(KIPRJMOD)/10118192-0001LF.pretty")(options "")(descr ""))
+  (lib (name FSMCTTR)(type KiCad)(uri "$(KIPRJMOD)/FSMCTTR.pretty")(options "")(descr ""))
 )
