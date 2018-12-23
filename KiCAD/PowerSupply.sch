@@ -433,4 +433,5 @@ Wire Wire Line
 Connection ~ 6250 4850
 Text Notes 3250 2900 0    79   ~ 0
 VERIFY USB PINOUT
+NoConn ~ 4450 3750
 $EndSCHEMATC

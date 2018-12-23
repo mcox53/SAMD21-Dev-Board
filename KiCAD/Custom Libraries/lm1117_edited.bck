@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP LM1117
+D 800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223
+K linear regulator ldo fixed positive
+F http://www.ti.com/lit/ds/symlink/lm1117.pdf
+$ENDCMP
+#
 $CMP LM1117-1.8
 D 800mA Low-Dropout Linear Regulator, 1.8V fixed output, TO-220/TO-252/TO-263/SOT-223
 K linear regulator ldo fixed positive

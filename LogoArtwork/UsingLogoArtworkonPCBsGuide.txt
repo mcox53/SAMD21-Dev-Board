@@ -1,0 +1,13 @@
+#### How to use logos on PCBs ####
+By: M.Cox 2018
+
+1. Grab the logo in a vector format if possible (.svg, .tif, etc..) and make sure you get the biggest image possible, it works way better if you are shrinking a larger image rather than increasing the size of a smaller, lower quality image.
+2. Find out how many pixels wide it is.
+3. Use the following formula to determine the scale factor:
+	True_Width = (Desired_Width(mm)) / (img_width(pixels))
+4. Go to http://img2mod.wayneandlayne.com/ and use upload the image and input the scale factor.
+5. Preview the image to make sure it works properly. You want the displayed image to be white so invert if necessary. You may have to mirror the image in paint if you are putting it on the bottom silkscreen.
+6. Save the modified .kicad_mod file and put it in a folder named library_name.pretty,
+7. Use the import library feature in pcbnew to import the folder.
+8. Add to the pcb specifically on whichever silkscreen layer is desired.
+
