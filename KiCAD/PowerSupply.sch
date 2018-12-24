@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SAMD21-DevBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -416,9 +417,11 @@ Connection ~ 7750 3450
 Wire Wire Line
 	7250 3450 7750 3450
 $Comp
-L LM1117 U2
+L LM1117-RESCUE-SAMD21-DevBoard U2
 U 1 1 5C0C6154
 P 5900 4850
+AR Path="/5C0C6154" Ref="U2"  Part="1" 
+AR Path="/5BF26B92/5C0C6154" Ref="U2"  Part="1" 
 F 0 "U2" H 5750 4975 50  0000 C CNN
 F 1 "LM1117" H 5900 4975 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-223" H 5900 4850 50  0001 C CNN
@@ -431,7 +434,5 @@ Wire Wire Line
 Wire Wire Line
 	6250 4950 6250 4850
 Connection ~ 6250 4850
-Text Notes 3250 2900 0    79   ~ 0
-VERIFY USB PINOUT
 NoConn ~ 4450 3750
 $EndSCHEMATC

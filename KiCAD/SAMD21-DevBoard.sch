@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SAMD21-DevBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -938,9 +939,9 @@ USB Transient Protection
 Text Notes 7400 7500 0    49   ~ 0
 SAMD21 Dev Board - Main
 Text Notes 8200 7650 0    49   ~ 0
-12/2/18
+12/23/18
 Text Notes 10600 7650 0    49   ~ 0
-0
+1\n
 Text Notes 7050 7100 0    79   ~ 0
 Author: Matthew Cox\nOrganization: University of Connecticut Formula SAE
 Wire Wire Line
@@ -1065,8 +1066,6 @@ F 3 "" H 9500 4800 50  0001 C CNN
 	1    9500 4800
 	1    0    0    -1  
 $EndComp
-Text Notes 3600 1150 0    79   ~ 0
-Note: Confirm board dimensions
 $Comp
 L FSMCTTR SW1
 U 1 1 5C1D3C4B
