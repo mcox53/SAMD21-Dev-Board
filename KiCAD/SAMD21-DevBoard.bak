@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:SAMD21-DevBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -118,47 +119,36 @@ USB_D-
 Text GLabel 6350 3500 2    39   Input ~ 0
 USB_D+
 $Comp
-L Crystal_Small Y1
-U 1 1 5BF304E9
-P 2500 1700
-F 0 "Y1" H 2300 1750 50  0000 C CNN
-F 1 "32.768KHz" H 2150 1650 50  0000 C CNN
-F 2 "MS1V-T1K:MS1V-T1K" H 2500 1700 50  0001 C CNN
-F 3 "" H 2500 1700 50  0001 C CNN
-	1    2500 1700
-	-1   0    0    1   
-$EndComp
-$Comp
 L C_Small C7
 U 1 1 5BF3056F
-P 2400 1400
-F 0 "C7" H 2410 1470 50  0000 L CNN
-F 1 "6.8pF" H 2200 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2400 1400 50  0001 C CNN
-F 3 "" H 2400 1400 50  0001 C CNN
-	1    2400 1400
+P 2350 1400
+F 0 "C7" H 2225 1475 50  0000 L CNN
+F 1 "6.8pF" H 2125 1325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2350 1400 50  0001 C CNN
+F 3 "" H 2350 1400 50  0001 C CNN
+	1    2350 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L C_Small C8
 U 1 1 5BF30598
-P 2600 1400
-F 0 "C8" H 2610 1470 50  0000 L CNN
-F 1 "6.8pF" H 2650 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 2600 1400 50  0001 C CNN
-F 3 "" H 2600 1400 50  0001 C CNN
-	1    2600 1400
+P 2650 1400
+F 0 "C8" H 2660 1470 50  0000 L CNN
+F 1 "6.8pF" H 2675 1325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2650 1400 50  0001 C CNN
+F 3 "" H 2650 1400 50  0001 C CNN
+	1    2650 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR03
 U 1 1 5BF30CDB
-P 2100 1300
-F 0 "#PWR03" H 2100 1050 50  0001 C CNN
-F 1 "GND" H 2100 1150 50  0000 C CNN
-F 2 "" H 2100 1300 50  0001 C CNN
-F 3 "" H 2100 1300 50  0001 C CNN
-	1    2100 1300
+P 2000 1300
+F 0 "#PWR03" H 2000 1050 50  0001 C CNN
+F 1 "GND" H 2000 1150 50  0000 C CNN
+F 2 "" H 2000 1300 50  0001 C CNN
+F 3 "" H 2000 1300 50  0001 C CNN
+	1    2000 1300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -575,24 +565,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 3600 6350 3600
 Wire Wire Line
-	2600 1500 2600 1800
-Wire Wire Line
-	2600 1800 2900 1800
-Wire Wire Line
-	2400 1500 2400 1900
-Wire Wire Line
-	2400 1900 2900 1900
-Connection ~ 2400 1700
-Connection ~ 2600 1700
-Wire Wire Line
-	2600 1200 2600 1300
-Wire Wire Line
-	2100 1200 2600 1200
-Wire Wire Line
-	2400 1200 2400 1300
-Wire Wire Line
-	2100 1300 2100 1200
-Connection ~ 2400 1200
+	2000 1200 2650 1200
 Wire Wire Line
 	6100 2300 6800 2300
 Wire Wire Line
@@ -938,9 +911,9 @@ USB Transient Protection
 Text Notes 7400 7500 0    49   ~ 0
 SAMD21 Dev Board - Main
 Text Notes 8200 7650 0    49   ~ 0
-12/2/18
+12/23/18
 Text Notes 10600 7650 0    49   ~ 0
-0
+1\n
 Text Notes 7050 7100 0    79   ~ 0
 Author: Matthew Cox\nOrganization: University of Connecticut Formula SAE
 Wire Wire Line
@@ -1065,8 +1038,6 @@ F 3 "" H 9500 4800 50  0001 C CNN
 	1    9500 4800
 	1    0    0    -1  
 $EndComp
-Text Notes 3600 1150 0    79   ~ 0
-Note: Confirm board dimensions
 $Comp
 L FSMCTTR SW1
 U 1 1 5C1D3C4B
@@ -1078,4 +1049,39 @@ F 3 "" H 8900 2050 50  0001 C CNN
 	1    8900 1850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Crystal_GND3_Small Y1
+U 1 1 5C436CC1
+P 2500 1700
+F 0 "Y1" H 1825 1475 39  0000 C CNN
+F 1 "32.768kHz" H 1825 1375 39  0000 C CNN
+F 2 "MS1V-T1K:MS1V-T1K" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 1800 2650 1800
+Wire Wire Line
+	2650 1800 2650 1500
+Wire Wire Line
+	2600 1700 2650 1700
+Connection ~ 2650 1700
+Wire Wire Line
+	2400 1700 2350 1700
+Wire Wire Line
+	2350 1500 2350 1900
+Wire Wire Line
+	2350 1900 2900 1900
+Connection ~ 2350 1700
+Wire Wire Line
+	2500 1575 2500 1200
+Connection ~ 2500 1200
+Wire Wire Line
+	2650 1200 2650 1300
+Wire Wire Line
+	2350 1300 2350 1200
+Connection ~ 2350 1200
+Wire Wire Line
+	2000 1300 2000 1200
 $EndSCHEMATC
